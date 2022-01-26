@@ -4,13 +4,11 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import ru.netology.entity.Country;
 import ru.netology.entity.Location;
-
 import ru.netology.i18n.LocalizationServiceImpl;
-
 import java.util.stream.Stream;
 
 public class LocalizationServiceImplTests {
-    LocalizationServiceImpl sut = new LocalizationServiceImpl();
+    LocalizationServiceImpl sut;
     private static long suiteStartTime;
     private long testStartTime;
 
@@ -30,6 +28,7 @@ public class LocalizationServiceImplTests {
     public void initTest() {
         System.out.println("Starting new nest");
         testStartTime = System.nanoTime();
+        sut = new LocalizationServiceImpl();
     }
 
     @AfterEach

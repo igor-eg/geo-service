@@ -10,16 +10,13 @@ import ru.netology.geo.GeoServiceImpl;
 import ru.netology.i18n.LocalizationService;
 import ru.netology.i18n.LocalizationServiceImpl;
 import ru.netology.sender.MessageSenderImpl;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Stream;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class MessageSenderImplTests {
-
 
     private static long suiteStartTime;
     private long testStartTime;
@@ -86,10 +83,6 @@ public class MessageSenderImplTests {
 
 
     }
-
-
-
-
 
 
 }

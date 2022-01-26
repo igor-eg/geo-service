@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 public class GeoServiceImplTests {
 
-    GeoServiceImpl sut = new GeoServiceImpl();
+    GeoServiceImpl sut;
     private static long suiteStartTime;
     private long testStartTime;
 
@@ -18,6 +18,7 @@ public class GeoServiceImplTests {
     public static void initSuite() {
         System.out.println("Running StringTest");
         suiteStartTime = System.nanoTime();
+
     }
 
     @AfterAll
@@ -29,6 +30,7 @@ public class GeoServiceImplTests {
     public void initTest() {
         System.out.println("Starting new nest");
         testStartTime = System.nanoTime();
+        sut = new GeoServiceImpl();
     }
 
     @AfterEach
